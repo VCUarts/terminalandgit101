@@ -174,7 +174,121 @@ $ open -a pages textfile.txt #open textfile.txt with pages
 				</section>
 
 				<section>
-					<h2>Git basics</h2>
+					<h2>Git Commands</h2>
+				</section>
+
+				<section>
+					<h2>init</h2>
+					<p>creates a .git directory</p>
+<pre><code data-trim contenteditable>
+
+$ git init
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>status</h2>
+					<p>displays the status of our repo, any changes, new files, deleted files, etc.</p>
+<pre><code data-trim contenteditable>
+
+$ git status
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>add</h2>
+					<p>tell git to track new files</p>
+<pre><code data-trim contenteditable>
+
+$ git add filename.txt
+$ git add .
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>commit</h2>
+					<p>take a snapshot of changes and new files</p>
+<pre><code data-trim contenteditable>
+
+$ git commit
+$ git commit -m "message describing the changes"
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>fetch</h2>
+					<p>check a remote repo for changes</p>
+<pre><code data-trim contenteditable>
+
+$ git fetch
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>pull</h2>
+					<p>pull down any changes from a remote and apply them to the local project</p>
+<pre><code data-trim contenteditable>
+
+$ git pull
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>push</h2>
+					<p>add any commits to the remote repo</p>
+<pre><code data-trim contenteditable>
+
+$ git push
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Using Git in a Existing Project</h2>
+<pre><code data-trim contenteditable>
+
+$ git init
+
+</code></pre>
+
+<pre><code data-trim contenteditable>
+
+$ git add .
+$ git commit -m "initial project commit"
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Pushing a Repo to GitHub</h2>
+					<p>First you must create a new project on GitHub</p>
+
+<pre><code data-trim contenteditable>
+
+$ git remote add origin http://yournewprojecturl.com/something.git
+$ git push origin master
+
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Pushing changes to GitHub</h2>
+					<p>After making changes to a project</p>
+
+<pre><code data-trim contenteditable>
+
+$ git status
+$ git add .
+$ git commit -m "message about what we changed"
+$ git push
+
+</code></pre>
 				</section>
 
 
