@@ -84,8 +84,8 @@
 					<h2>Basic commands</h2>
 <pre><code data-trim contenteditable>
 
-$ ls
 $ cd
+$ ls
 $ mkdir
 $ touch
 $ open .
@@ -93,25 +93,40 @@ $ open .
 </code></pre>
 				</section>
 
-
-				<section data-background="#85FC81">
-					<h2>ls</h2>
-					<p>List directory contents</p>
-				</section>
-
 				<section data-background="#85FC81">
 					<h2>cd</h2>
 					<p>Change directory</p>
 
 <pre><code data-trim contenteditable>
-
-$ cd ~ #change to root directory
-$ cd .. #move back a directory
-$ cd github/projects/myproject #change to myproject directory
-
+#change to root directory
+$ cd ~ 
+</code></pre>
+<pre><code data-trim contenteditable>
+#move back a directory
+$ cd ..
+</code></pre>
+<pre><code data-trim contenteditable>
+#change to myproject directory
+$ cd github/projects/myproject 
 </code></pre>
 
 <small>Tip: use TAB to autocomplete</small>
+				</section>
+
+				<section data-background="#85FC81">
+					<h2>ls</h2>
+					<p>List directory contents</p>
+
+<pre><code data-trim contenteditable>
+$ ls 
+</code></pre>
+
+<pre><code data-trim contenteditable>
+aDirectory        anotherFile.txt         aPic.jpg 
+myFile.txt        file.txt      
+</code></pre>
+
+				
 				</section>
 
 				<section data-background="#85FC81">
@@ -119,9 +134,8 @@ $ cd github/projects/myproject #change to myproject directory
 					<p>create a new directory</p>
 
 <pre><code data-trim contenteditable>
-
-$ mkdir mydirectory #create mydirectory within the current directory 
-
+#create mydirectory within the current directory 
+$ mkdir mydirectory
 </code></pre>
 				</section>
 
@@ -130,10 +144,8 @@ $ mkdir mydirectory #create mydirectory within the current directory
 					<p>create a new file</p>
 
 <pre><code data-trim contenteditable>
-
-$ mkdir touch mynewfile.txt #create mynewfile.txt within the 
-                            #current directory 
-
+#create mynewfile.txt within the current directory 
+$ mkdir touch mynewfile.txt 
 </code></pre>
 				</section>
 
@@ -143,12 +155,18 @@ $ mkdir touch mynewfile.txt #create mynewfile.txt within the
 					<p>open a file or directory</p>
 
 <pre><code data-trim contenteditable>
-
-$ open . #show the current directory in finder
-$ open textfile.txt #open textfile.txt with it's the default program
-$ open -a pages textfile.txt #open textfile.txt with pages
-
+#show the current directory in finder
+$ open .
 </code></pre>
+<pre><code data-trim contenteditable>
+#open textfile.txt with it's the default program
+$ open textfile.txt 
+</code></pre>
+<pre><code data-trim contenteditable>
+#open textfile.txt with pages
+$ open -a pages textfile.txt 
+</code></pre>
+
 				</section>
 
 				<section data-background="#85FC81">
